@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta >
+    <title>{% block title %}谜之留言板{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" type="text/css">
+</head>
+
+<body>
+<main>
+    <header>
+        <h1 class="text-center display-4">谜之留言板</h1>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="text-center">
+        {% block footer %}
+            <small>&copy; 2019 <a href="https://4f-kira.github.io">Kir[A]</a></small>
+        {% endblock %}
+    </footer>
+
+</main>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+</body>
+</html>
